@@ -1,0 +1,493 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "movie_name",
+        "pattern": "[A-Z]\\S*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": ["Chinese", "Chines", "chines"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a movie to see",
+        "intent": "movie_search",
+        "entities": []
+      },
+      {
+        "text": "i want to watch a movie",
+        "intent": "movie_search",
+        "entities": []
+      },
+      {
+        "text": "i am searching for a movie",
+        "intent": "movie_search",
+        "entities": []
+      },
+      {
+        "text": "show me chinese movies",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "country"
+          }
+        ]
+      },
+      {
+        "text": "show me the chinese movie called Tenet",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "chinese",
+            "entity": "country"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "value": "Tenet",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "show me the chinese movie called TheShawshankRedemption",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "chinese",
+            "entity": "country"
+          },
+          {
+            "start": 33,
+            "end": 55,
+            "value": " TheShawshankRedemption",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "show me the movie called CatchMeIfYouCan",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 40,
+            "value": "CatchMeIfYouCan",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "show me the movie called HappiestSeason",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 39,
+            "value": "HappiestSeason",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "show me the movie called Tenet",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "Tenet",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "show me the movie called Tenet in the 2020",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "Tenet",
+            "entity": "movie_name"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "value": "2020",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "I want to see Tenet",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "Tenet",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "show me a mexican movie in the 2019",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "mexican",
+            "entity": "country"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "2019",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "i am looking for an american movie called Tenet in 2020",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "american",
+            "entity": "country"
+          },
+          {
+            "start": 42,
+            "end": 47,
+            "value": "Tenet",
+            "entity": "movie_name"
+          },
+          {
+            "start": 51,
+            "end": 55,
+            "value": "2020",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "i am looking for the movie called CatchMeIfYouCan",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 34,
+            "end": 49,
+            "value": "CatchMeIfYouCan",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "i want to see CatchMeIfYouCan",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 29,
+            "value": "CatchMeIfYouCan",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "i want to see HappiestSeason in the 1999",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 28,
+            "value": "HappiestSeason",
+            "entity": "movie_name"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "1999",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "i want to see TheGodfather in the 1999",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "TheGodfather",
+            "entity": "movie_name"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "value": "1999",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "i am looking for an american movie called HappiestSeason in 2020",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "american",
+            "entity": "country"
+          },
+          {
+            "start": 42,
+            "end": 56,
+            "value": "HappiestSeason",
+            "entity": "movie_name"
+          },
+          {
+            "start": 60,
+            "end": 64,
+            "value": "2020",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "i am looking for the movie called HappiestSeason",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 34,
+            "end": 48,
+            "value": "HappiestSeason",
+            "entity": "movie_name"
+          }
+        ]
+      },
+      {
+        "text": "search for movies",
+        "intent": "movie_search",
+        "entities": []
+      },
+      {
+        "text": "anything in the 2005",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "2005",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "I am looking a movie in 1994",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": "1994",
+            "entity": "year"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for chinese type",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "chinese",
+            "entity": "country"
+          }
+        ]
+      },
+      {
+        "text": "indian movie",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "indian",
+            "entity": "country"
+          }
+        ]
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "a movie in the 2020",
+        "intent": "movie_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "2020",
+            "entity": "year"
+          }
+        ]
+      }
+    ]
+  }
+}
