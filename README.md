@@ -27,17 +27,15 @@ The relevant content is as follows:
 > 8) Realize the technology of multiple rounds and multiple queries of the state machine, and provide explanations and answers based on contextual questions
 > 9) Multiple rounds and multiple query technology for handling rejections, waiting state transitions and pending actions
 
-
-
 ## MovieAPI
 Thanks for [rapidapi](https://rapidapi.com/)  
 And I used [IMDbapi](https://rapidapi.com/apidojo/api/imdb8?endpoint=apiendpoint_dad99933-4241-43f0-b4f2-529d652dcc96) to realize movie information search including movie name, genre, images and posters.  
-You could find the code in [MoiveApi]()
-### Any optional sections
+You could find the code in [MovieAPI.py](https://github.com/vegetablesB/MovieBot/blob/master/MovieAPI.py)
 
 ## Related Efforts
+Thanks for Rasa spacy rapidapi and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 
 ## Contributing
-
+[vegetablesB](https://github.com/vegetablesB)
 ## License
 [MIT © Richard McRichface.](../LICENSE)
