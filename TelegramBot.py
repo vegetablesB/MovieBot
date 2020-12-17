@@ -19,7 +19,7 @@ from MovieAPI import(
 
 params={}
 neg_params={}
-TOKEN='1090662742:AAG23JH9Xo_rdu6QaoYssBpmK0JxTXtglYk'
+TOKEN='yourtoken'
 
 # Enable logging
 logging.basicConfig(
