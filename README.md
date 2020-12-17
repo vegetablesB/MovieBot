@@ -1,11 +1,5 @@
 # MovieBot
-This is a movie search bot based on rasa
-
-[![license](https://img.shields.io/github/license/:user/:repo.svg)](LICENSE)
-
-This is an example file with maximal choices selected.
-
-This is a long description.
+This is a movie search bot based on rasa.
 
 ## Table of Contents
 
@@ -28,12 +22,12 @@ The relevant content is as follows:
 > 9) Multiple rounds and multiple query technology for handling rejections, waiting state transitions and pending actions
 
 ## MovieAPI
-Thanks for [rapidapi](https://rapidapi.com/)  
+Thanks for [rapidapi](https://rapidapi.com/).  
 And I used [IMDbapi](https://rapidapi.com/apidojo/api/imdb8?endpoint=apiendpoint_dad99933-4241-43f0-b4f2-529d652dcc96) to realize movie information search including movie name, genre, images and posters.  
-You could find the code in [MovieAPI.py](https://github.com/vegetablesB/MovieBot/blob/master/MovieAPI.py)
+You could find the code in [MovieAPI.py](https://github.com/vegetablesB/MovieBot/blob/master/MovieAPI.py).
 
 ## Related Efforts
-Thanks for Rasa spacy rapidapi and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+Thanks for Rasa spacy rapidapi and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot).
 
 ## Contributing
 [vegetablesB](https://github.com/vegetablesB)
