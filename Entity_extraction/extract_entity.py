@@ -21,7 +21,3 @@ def extract_entities(message):
             # Save interesting entities
             ents[ent.label_] = ent.text
     return ents
-extract_entities1('I want a chinese movie called Tenet in 1999')
-extract_entities1('I want a chinese movie called Catch Me if You Can in 1999')
-extract_entities1('I want a chinese movie called The GodFather in 1999')
-extract_entities1('show me the movie called Happiest Season in 1999')
