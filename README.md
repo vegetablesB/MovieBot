@@ -24,8 +24,7 @@ The relevant content is as follows:
 
 ## NLUPart
 You could find the code at [NLUbasedRasa.py](https://github.com/vegetablesB/MovieBot/blob/master/NLUbasedRasa.py).  
-In this part, I realized extracting user intent and entity. It's easy to extract entity which is common such as year like "2020". But It's hard to extract movie name such as The Godfather or Cathch Me If You Can. After thinking, I used regular expressions to improve the ability.   
-You can find the code at [data/cnrasa.json](https://github.com/vegetablesB/MovieBot/blob/master/data/cnrasa.json).  
+In this part, I realized extracting user intent and entity. It's easy to extract entity which is common such as year like "2020". But It's hard to extract movie name such as The Godfather or Cathch Me If You Can. After thinking, I used regular expressions to improve the ability. You can find the code at [data/cnrasa.json](https://github.com/vegetablesB/MovieBot/blob/master/data/cnrasa.json).  
 I also found sometimes you cannot extract basic intent or entity because the data used to train is not enough. Maybe other data way too much. So I balanced the training data.
 
 ## MovieAPI
