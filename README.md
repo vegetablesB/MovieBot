@@ -4,6 +4,7 @@ This is a movie search bot based on rasa.
 ## Table of Contents
 
 - [Background](#background)
+- [NLUPart](#NLUPart)
 - [MovieAPI](#MovieAPI)
 - [Contributing](#contributing)
 - [License](#license)
@@ -21,6 +22,13 @@ The relevant content is as follows:
 > 8) Realize the technology of multiple rounds and multiple queries of the state machine, and provide explanations and answers based on contextual questions
 > 9) Multiple rounds and multiple query technology for handling rejections, waiting state transitions and pending actions
 
+## NLUPart
+You could find the code at [NLUbasedRasa.py](https://github.com/vegetablesB/MovieBot/blob/master/NLUbasedRasa.py).  
+In this part, I realized extracting user intent and entity. It's easy to extract entity which is common such as year like "2020". But It's hard to   
+extract movie name such as The Godfather or Cathch Me If You Can. After thinking, I used regular expressions to improve the ability.   
+You can find the code at [data/cnrasa.json](https://github.com/vegetablesB/MovieBot/blob/master/data/cnrasa.json).  
+I also found sometimes you cannot extract basic intent or entity because the data used to train is not enough. Maybe other data way too much. So I balanced the training data.
+
 ## MovieAPI
 Thanks for [rapidapi](https://rapidapi.com/).  
 And I used [IMDbapi](https://rapidapi.com/apidojo/api/imdb8?endpoint=apiendpoint_dad99933-4241-43f0-b4f2-529d652dcc96) to realize movie information search including movie name, genre, images and posters.  
@@ -31,5 +39,6 @@ Thanks for Rasa spacy rapidapi and [python-telegram-bot](https://github.com/pyth
 
 ## Contributing
 [vegetablesB](https://github.com/vegetablesB)
+
 ## License
 [MIT © Richard McRichface.](../LICENSE)
