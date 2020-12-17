@@ -6,6 +6,7 @@ This is a movie search bot based on rasa.
 - [Background](#background)
 - [NLUPart](#NLUPart)
 - [MovieAPI](#MovieAPI)
+- [Demo](#Demo)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -31,6 +32,9 @@ I also found sometimes you cannot extract basic intent or entity because the dat
 Thanks for [rapidapi](https://rapidapi.com/).  
 And I used [IMDbapi](https://rapidapi.com/apidojo/api/imdb8?endpoint=apiendpoint_dad99933-4241-43f0-b4f2-529d652dcc96) to realize movie information search including movie name, genre, images and posters.  
 You could find the code in [MovieAPI.py](https://github.com/vegetablesB/MovieBot/blob/master/MovieAPI.py).
+
+## Demo
+You could find the vedio in [demo](https://github.com/vegetablesB/MovieBot/blob/master/demo).
 
 ## Related Efforts
 Thanks for Rasa spacy rapidapi and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot).
