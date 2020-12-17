@@ -38,7 +38,7 @@ You could find the code in [MovieAPI.py](https://github.com/vegetablesB/MovieBot
 Thanks for Rasa spacy rapidapi and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot).
 
 ## Contributing
-[vegetablesB](https://github.com/vegetablesB)
+[@vegetablesB](https://github.com/vegetablesB)
 
 ## License
 [MIT © Richard McRichface.](../LICENSE)
