@@ -2,7 +2,7 @@ import http.client
 import json
 IP="imdb8.p.rapidapi.com"
 headers = {
-    'x-rapidapi-key': "c7cbaf6610mshf6019caa1f2eb77p1a31a2jsnc9bcc59861d5",
+    'x-rapidapi-key': "yourkey",
     'x-rapidapi-host': "imdb8.p.rapidapi.com"
     }
 def Respond(message):
