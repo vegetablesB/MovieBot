@@ -6,10 +6,6 @@
         "pattern": "[0-9]{5}"
       },
       {
-        "name": "greet",
-        "pattern": "hey[^\\s]*"
-      },
-      {
         "name": "movie_name",
         "pattern": "[A-Z]\\S*"
       }
@@ -47,21 +43,6 @@
         "entities": []
       },
       {
-        "text": "good morning",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "good evening",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "dear sir",
-        "intent": "greet",
-        "entities": []
-      },
-      {
         "text": "yes",
         "intent": "affirm",
         "entities": []
@@ -73,46 +54,6 @@
       },
       {
         "text": "yeah",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "indeed",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "that's right",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "ok",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "great",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "right, thank you",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "correct",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "great choice",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
-        "text": "sounds really good",
         "intent": "affirm",
         "entities": []
       },
@@ -474,6 +415,56 @@
       {
         "text": "have a good one",
         "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "show me images",
+        "intent": "images_get",
+        "entities": []
+      },
+      {
+        "text": "I want images",
+        "intent": "images_get",
+        "entities": []
+      },
+      {
+        "text": "I looking for images",
+        "intent": "images_get",
+        "entities": []
+      },
+      {
+        "text": "show me more images",
+        "intent": "images_get",
+        "entities": []
+      },
+      {
+        "text": "I want more images",
+        "intent": "images_get",
+        "entities": []
+      },
+      {
+        "text": "I looking for more images",
+        "intent": "images_get",
+        "entities": []
+      },
+      {
+        "text": "What's the genre",
+        "intent": "genre_get",
+        "entities": []
+      },
+      {
+        "text": "could you tell me the genre of the movie",
+        "intent": "genre_get",
+        "entities": []
+      },
+      {
+        "text": "I looking for the genre",
+        "intent": "genre_get",
+        "entities": []
+      },
+      {
+        "text": "I want the genre",
+        "intent": "genre_get",
         "entities": []
       },
       {
